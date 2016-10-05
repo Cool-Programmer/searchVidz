@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Search VidZ</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen">
+</head>
+<body>
+	<div id="container">
+		<header>
+			<h1>Search <span>VidZ</span></h1>
+			<p>Search all Youtube videos</p>
+		</header>
+
+		<section>
+			<form id="search-form" name="searchForm" onsubmit="return search()"> 
+				<div class="fieldContainer">
+					<input type="search" id="query" class="search-field" placeholder="Search Youtube...">
+					<input type="submit" name="search-btn" id="search-btn" value="">
+				</div>
+			</form>
+
+			<ul id="results"></ul>
+			<div id="buttons"></div>
+		</section>
+
+		<footer>
+			<p>Copyright 2016 &copy; Mherion</p>
+		</footer>
+	</div>	
+
+<!-- SCRITPS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"> </script>
+<script src="js/jquery.fancybox.pack.js"></script>
+<script src="js/script.js"></script>
+<script>
+	$(document).ready(function(){
+		$('.fancybox').fancybox();
+	});
+</script>
+
+</body>
+</html>
